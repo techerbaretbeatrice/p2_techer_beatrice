@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titre de la page</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalise.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.css" crossorigin="anonymous">
 </head>
     
 <body>
@@ -20,8 +20,66 @@
                 <li><a href="#"><span class="nav_link_container">Activités</span></a></li>    
             </ul>
         </nav>
-
+        <h1>
+            Trouver votre hébergement pour des vacances de rêve
+        </h1>
+        <p>
+            En plein centre ville ou en pleine nature
+        </p>
+        
+            <form >
+                <div class="form_elements_container">
+                    <div class="form_elements" id="map">
+                        <i class="fa-solid fa-location-dot"></i>  
+                    </div>
+                    <div class="form_elements">
+                        <input type="text" id="location">
+                    </div>
+                    <div class=" form_elements desktop_research ">
+                        <input type="button" id="research" value="rechercher">
+                    </div>
+                    <div class="form_elements research_roundedbox" >
+                        <button id="research_icon"><i class="fa-solid fa-magnifying-glass black"></i></button>
+                    </div> 
+                </div>
+                <div class="filters_container"> 
+                    <div class="filters" id="filter_box">
+                        Filtres
+                    </div>
+                    <div class="filters">
+                        <button class="button_filter">
+                            <div class="icon_box"><i class="fa-solid fa-money-bill-wave icon_color"></i></div>
+                            <p class="font_size">Economique</p>
+                        </button>
+                    </div>
+                    <div class="filters ">
+                        <button class="button_filter">
+                            <div class="icon_box"><i class="fa-solid fa-child icon_color"></i></div>
+                            <p class="font_size">Familial</p>
+                        </button>
+                    </div>
+                    <div class="filters">
+                        <button class="button_filter">
+                            <div class="icon_box"><i class="fa-solid fa-heart icon_color"></i></div>
+                            <p class="font_size">Romantique</p>
+                        </button>    
+                    </div>
+                    <div class="filters ">
+                        <button class="button_filter">
+                            <div class="icon_box"><i class="fa-solid fa-dog icon_color"></i></div>
+                            <p class="font_size">Animaux autorisés</p>
+                        </button>
+                    </div>
+                </div> 
+                <div id="info_container">
+                    <div id="info_box"><i class="fa-solid fa-info icon_color"></i></div>
+                    <p id="info">
+                        Plus de 500 logements sont disponible dans cette ville
+                    </p>
+                </div>  
+            </form> 
+            
     </header>
-
+                
 </body>
 </html>
