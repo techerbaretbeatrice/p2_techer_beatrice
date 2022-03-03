@@ -74,7 +74,7 @@ a
     align-items: flex-end;
 }
 
-img 
+.logo
 {
     width: 63px;
     height: 31px;
@@ -249,35 +249,66 @@ form
     width: 100%;
     max-width: 1440px;
     background-color: white;
-    height: 626px;
+    min-height: 626px;
+    height: 100%;
     justify-content:space-between;
     padding-right: 52px;
     padding-left: 52px;
     padding-top: 38px;
     margin-bottom: 65px; 
+
+}
+
+h2
+{
+    font-size: 22px;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .lodge_container
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 66%;
-    height: 626px;
+    max-width: 880px;
+    min-height: 626px;
+    max-height: auto ;
     background-color: #F2F2F2;
 }
 
-.lodge_box
+.lodge_box_container
 {
-    height: 430px;
-    width: 33%;
-    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 16px;
+    margin-right: 16px;
+    
 }
+
+.link_lodge
+{
+    color: black;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+
 
 .card_body
 {
-    width: 246px;
+    max-width: 25%;
+    min-width: 246px;
     height: 200px;
-    background-color: white;    
+    background-color: white;
+    margin-bottom: 30px; 
+    padding: 4px;   
+}
+
+.shadow
+{
+    box-shadow: 0px 0px 10px 4px rgb(206, 206, 206);
 }
 
 .border_container
@@ -292,33 +323,38 @@ form
 
 .img_container
 {
-    width: auto;
+    width: 100%;
     height: 55%;
+    overflow: hidden;
+}
+
+._description_box
+{
+    width: 100%;
+    height: 45%;
 }
 
 .contain
 {
-    object-fit: fill;
-    width: 230px;
+    object-fit: cover;
     height: 100%;
-    margin-left: 3%;
-    margin-right: 5%;
-    margin-top: 3%;
+    min-width: 100%;
+    margin-left: 0%;
     border-radius: 15px 15px 0px 0px;
 }
 
 h3
 {
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 8px;
     margin-bottom: 3%;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .price
 {
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 16px;
     margin-bottom: 3%;
     font-size: 10px;
 }
@@ -335,9 +371,65 @@ h3
 
 .popular_lodge
 {
-    width: 33%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 100%px;
     height: 625px;
     background-color: #F2F2F2;
+    overflow: hidden;
+    align-items:  center;
+}
+
+.title_popular_box
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.popular_box
+{
+    width: 82%;
+}
+
+.popular_card_body
+{
+    width: 100%;
+    height: 144px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    padding: 4px;
+}
+
+.popular_img_container
+{
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.popular_img_contain
+{
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    margin-left: 0px;  
+}
+
+.popular_description_box
+{
+    height: 100%;
+    width: 60%;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-right: 10%;
+
 }
 
 footer
@@ -398,6 +490,8 @@ footer
 
 
 
+
+
 @media screen and (max-width: 992px) and (min-width: 768px){
 
 ul
@@ -416,9 +510,64 @@ ul
     margin-top: 15px;
 }
 
+.lodge
+{
+    flex-direction: column-reverse;
+    max-width: 100%;
+    width: 100%;
+}
+
+.lodge_box_container
+{
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
 
 
-    
+.popular_lodge
+{
+    width: 100%;
+    max-width: 992px;
+    border-radius: 15px;
+    height: auto;
+}
+
+.popular_box
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 0%;
+}
+
+.popular_card_body
+{
+    width: 40%;
+}
+
+.title_popular_box
+{
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.lodge_container
+{
+    max-width: 100%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+h2
+{
+    margin-bottom: 8%;
+}
+
+
+
 }
 
 @media all and (max-width: 768px){
@@ -457,7 +606,7 @@ li:hover .nav_link_container
     padding-bottom: 16px;
 }
 
-img
+.logo
 {
     margin-left: 0px;
     margin-top: 29px;
@@ -549,6 +698,75 @@ p
     margin-bottom: 44px;
     width: 100%;
 }
+
+.lodge
+{
+    flex-direction: column-reverse;
+    max-width: 768px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.lodge_box_container
+{
+    justify-content: left;
+    flex-direction: column ;
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+
+.popular_lodge 
+{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0px;
+    height: auto;
+}
+
+.lodge_container
+{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+}
+
+.card_body
+{
+    max-width: 768px;
+    width: 100%;
+    height: 200px;
+    padding-bottom: 30px;
+}
+
+
+.img_container
+{
+    width: 100%;
+
+}
+h2
+{
+    margin-left: 20px;
+    margin-top: 40px;   
+}
+
+.title_popular_box
+{
+    padding: 0px;
+}
+
+.popular_box
+{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 
 
 
