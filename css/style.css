@@ -37,7 +37,9 @@ li
 {
     list-style: none;
 }
-header li{
+
+header li
+{
     width: 150px;   
 }
 
@@ -57,7 +59,7 @@ li:hover .nav_link_container
     justify-content: center;
     color: black ; 
     font-family: 'Raleway', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     padding-bottom: 20px;
     
 }
@@ -95,7 +97,7 @@ p
 {
     font-family: 'Raleway', sans-serif;
     margin-left: 52px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 form
@@ -217,6 +219,12 @@ form
     margin: 0px;
 }
 
+.button_filter:hover p
+{
+    color: #0065FC;
+    cursor: pointer;
+}
+
 #info_container
 {
     display: flex;
@@ -239,7 +247,7 @@ form
 {
     margin: 5px;
     font-family: 'Raleway',sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .lodge
@@ -264,6 +272,7 @@ h2
     font-size: 22px;
     margin-left: 5%;
     margin-top: 5%;
+    color: black;
 }
 
 .lodge_container
@@ -287,11 +296,17 @@ h2
     
 }
 
+.lodge_box_link
+{
+    color: black;
+}
+
 .link_lodge
 {
     color: black;
     font-weight: bold;
-    margin-left: 5%;
+    margin-left: 40px;
+    margin-top: 15px;
 }
 
 
@@ -324,7 +339,7 @@ h2
 .img_container
 {
     width: 100%;
-    height: 55%;
+    height: 60%;
     overflow: hidden;
 }
 
@@ -345,18 +360,18 @@ h2
 
 h3
 {
-    margin-left: 5%;
+    margin-left: 15px;
     margin-top: 8px;
-    margin-bottom: 3%;
     font-size: 14px;
+    margin-bottom: 0px;
 }
 
 .price
 {
-    margin-left: 5%;
-    margin-top: 16px;
-    margin-bottom: 3%;
-    font-size: 10px;
+    margin-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 12px;
 }
 
 .icon_color_grey
@@ -366,15 +381,24 @@ h3
 
 .rating
 {
-    padding-left: 5%;
+    padding-left: 15px;
+    font-size: 10px;
+}
+
+.popular_rating
+{
+    margin-top: 40px;
+    margin-left: 15px;
+    font-size: 10px;
 }
 
 .popular_lodge
 {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 31.5%;
     max-width: 100%px;
+    min-width: 300px;
     height: 625px;
     background-color: #F2F2F2;
     overflow: hidden;
@@ -392,12 +416,19 @@ h3
 
 .popular_box
 {
-    width: 82%;
+    width: 83%;
+    min-width: 295px;
+}
+
+.popular_box_link
+{
+    color: black;
 }
 
 .popular_card_body
 {
     width: 100%;
+    min-width: 295px;
     height: 144px;
     background-color: #FFFFFF;
     display: flex;
@@ -426,9 +457,10 @@ h3
 {
     height: 100%;
     width: 60%;
-    padding-left: 5%;
-    padding-top: 3%;
-    padding-right: 10%;
+    padding-left: 20px;
+    padding-top: 3px;
+    padding-right: 20px;
+
 
 }
 
@@ -460,7 +492,7 @@ h3
 
 
 
-.activities_box_container
+.activities_box_container 
 {
     width: 50%;
     min-height: 445px;
@@ -469,10 +501,17 @@ h3
     justify-content: space-around ;
 }
 
+.activities_box_link
+{
+    color: black;
+}
+
 .activities_container_left
 {
     max-width: 302px;
-    width: 50%;overflow: hidden;
+    width: 100%;
+    overflow: hidden;
+    min-height: 445px;
 
 }
 
@@ -483,6 +522,8 @@ h3
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 445px;
+
 }
 
 .activities_container_left_top
@@ -686,13 +727,23 @@ ul
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 0%;
+}
+
+.popular_box_link
+{
+    color: black;
+    width: 40%;
+    min-width: 343px;
+
+    
 }
 
 .popular_card_body
 {
     width: 40%;
+    min-width: 343px;
 }
 
 .title_popular_box
@@ -711,6 +762,11 @@ ul
 h2
 {
     margin-bottom: 8%;
+}
+
+.title_activities
+{
+    margin-left: 90px;
 }
 
 .activities_container
@@ -734,6 +790,7 @@ h2
     width: 90%;
     height: 190px;
     margin-top: 20px;
+    min-height: 0px;
 }
 
 .img_left_container
@@ -948,7 +1005,6 @@ p
 {
     justify-content: left;
     flex-direction: column ;
-    margin-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 0px;
@@ -976,19 +1032,21 @@ p
     max-width: 768px;
     width: 100%;
     height: 200px;
-    padding-bottom: 30px;
 }
 
 
 .img_container
 {
     width: 100%;
+    height: 60%;
 
 }
+
 h2
 {
     margin-left: 20px;
-    margin-top: 40px;   
+    margin-top: 40px;
+    margin-bottom: 40px;   
 }
 
 .title_popular_box
@@ -1003,12 +1061,19 @@ h2
     padding-right: 20px;
 }
 
+
 .activities_container
 {
     flex-direction: column;
     max-height: 100%;
     max-width: 100%;
     padding: 20px;
+}
+
+.title_activities
+{
+    margin-left: 20px;
+    margin-bottom: 0px;
 }
 
 .activities_box_container
@@ -1023,6 +1088,7 @@ h2
     width: 100%;
     height: 190px;
     margin-top: 20px;
+    min-height: 0px;
 }
 
 .img_left_container
